@@ -8,7 +8,7 @@ const Navbar = () => {
         <section className='navbar-bg'>
             <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container">
-                    <a className="navbar-brand" href="/#">QuickPay</a>
+                    <a className="navbar-brand" href="/#">Quick<i>Pay</i> </a>
                     <button className="navbar-toggler" type="button" onClick={() => setShow(!show)} data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>

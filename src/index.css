@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family-Poppins:wght@300;500; 7008 display-swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 * {
   margin: 0;
@@ -10,7 +10,7 @@
 :root {
   --bgcolor: #f1f5fd;
   --primary-color: #6f5de7;
-  --text-color: #cacad6;
+  --text-color: #a5a5af;
   --main-text-color: #333333;
 }
 
@@ -45,15 +45,19 @@ h1, h2, h3, h4, h5, h6 {
   .container-xxl { max-width: 1400px; }
 }
 
-/* Navbar */
+/*-------------------------------------------------Navbar Start */
 
 .navbar-bg {
   background-color: var(--bgcolor);
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .navbar-brand {
-  font-size: 2rem;
+  font-size: 2.6rem;
+}
+
+.navbar-brand i {
+  color: var(--primary-color);
 }
 
 .navbar li {
@@ -63,16 +67,28 @@ h1, h2, h3, h4, h5, h6 {
 .navbar li a{
   font-size: 1.7rem;
   font-weight: lighter;
+  letter-spacing: 1px;
+  position: relative;
 }
 
-.navbar li a:hover {
-  color: var(--primary-color);
-  text-shadow: 0 0.2rem 0.3rem #7b6dd385;
+.navbar li a::after {
+  content: "";
+  position: absolute;
+  background-color: var(--primary-color);
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: 0px;
+  transition: 0.3s;
+}
+
+.navbar li a:hover::after{
+  width: 100%;
 }
 
 .btn-style {
-  width: 12rem;
-  height: 4rem;
+  width: 10rem;
+  height: 3.5rem;
   border-radius: 2rem;
   color: #fff;
   background-color: var(--primary-color);
@@ -99,3 +115,137 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--primary-color);
   text-transform: capitalize;
 }
+
+/*-------------------------------------------------Navbar End */
+
+/*-------------------------------------------------Header Start */
+
+header {
+  background-color: var(--bgcolor);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.main-hero-container {
+  height: 80vh;
+  display: flex;
+  /* background-color: aqua; */
+}
+
+.main-hero-container .h1 {
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+.main-hero-para {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin: 3rem 0 5rem 0;
+  font-weight: lighter;
+}
+
+.main-hero-container h3 {
+  font-weight: lighter;
+}
+
+.main-hero-section-img {
+  position: relative;
+}
+
+.main-hero-section-img img{
+  width: 60%;
+  height: 75%;
+  margin-top: 10rem;
+  box-shadow: 0 0.8rem 6px 0 rgb(0 0 0 / 25%);
+  border-radius: 1.5rem;
+  position: absolute;
+}
+
+.main-hero-section-img .main-hero-section-img2 {
+  position: absolute;
+  width: 50%;
+  height: 35%;
+  left: 55%;
+  top: -2%;
+}
+
+.input-group {
+  position: relative !important;
+}
+
+.form-control-text {
+  position: absolute;
+  height: 4.4rem;
+  border: none;
+  outline: none;
+  padding: 1.5rem !important;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  box-shadow: 0 0.6rem 6px 0 rgb(0 0 0 / 25%);
+}
+
+.input-group {
+  position: absolute;
+  left: -10px;
+}
+
+.input-group-button {
+  position: absolute;
+  left: 59%;
+  color: #fff;
+  background-color: var(--primary-color);
+  top: 0.1rem;
+  height: 4.3rem;
+  width: 16%;
+  border-radius: 2rem !important;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  box-shadow: -4px 0 4px 0 rgb(0 0 0 / 25%);
+}
+
+/*-------------------------------------------------Header End */
+
+/*-------------------------------------------------Work section Start */
+
+.work-contiainer {
+  width: 80vw;
+  padding: 2rem;
+  box-shadow: 0 0.8rem 6px 0 rgb(0 0 0 / 25%);
+  margin-top: -10rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.work-contiainer .main-heading {
+  font-size: 30px;
+  font-weight: bolder;
+  margin: 30px;
+  word-spacing: 5px;
+}
+
+.work-container-subdiv {
+  padding: 0 60px 0 60px;
+}
+
+.work-contiainer .sub-heading {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.work-contiainer .fontawesome-style {
+  font-size: 2.3rem;
+  color: var(--primary-color);
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: var(--bgcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+/*-------------------------------------------------Work section End */
