@@ -163,7 +163,7 @@ header {
 
 .main-hero-section-img .main-hero-section-img2 {
   position: absolute;
-  width: 50%;
+  width: 45%;
   height: 35%;
   left: 55%;
   top: -2%;
@@ -206,6 +206,10 @@ header {
   box-shadow: -4px 0 4px 0 rgb(0 0 0 / 25%);
 }
 
+.input-group-button:hover {
+  background-color: rgb(0, 60, 255);
+}
+
 /*-------------------------------------------------Header End */
 
 /*-------------------------------------------------Work section Start */
@@ -215,6 +219,7 @@ header {
   padding: 2rem;
   box-shadow: 0 0.8rem 6px 0 rgb(0 0 0 / 25%);
   margin-top: -10rem;
+  margin-bottom: 2rem;
   background-color: #fff;
   border-radius: 10px;
 }
@@ -235,7 +240,7 @@ header {
   font-weight: normal;
 }
 
-.work-contiainer .fontawesome-style {
+.fontawesome-style {
   font-size: 2.3rem;
   color: var(--primary-color);
   width: 60px;
@@ -249,3 +254,99 @@ header {
 }
 
 /*-------------------------------------------------Work section End */
+
+/*-------------------------------------------------Aboutus section Start */
+
+.our-services img {
+  width: 55%;
+  /* height: 80%; */
+  margin-top: 10rem;
+  box-shadow: 0 0.8rem 6px 0 rgb(0 0 0 / 25%);
+  border-radius: 15px;
+}
+
+.our-services .mini-title {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 3rem 0;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.our-services .main {
+  font-weight: bolder;
+}
+
+.our-services-info {
+  margin-top: 4rem;
+}
+
+.our-services-info .our-services-number {
+  height: 40px;
+  width: 40px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  color: var(--primary-color);
+} 
+
+.our-services-list .btn-style-border {
+  width: 12rem;
+}
+
+.our-services-list {
+  padding: 0 13rem;
+}
+
+.our-services-info .main-hero-para {
+  margin: 1rem 0;
+}
+
+/*-------------------------------------------------Aboutus section End */
+
+/*-------------------------------------------------Aboutus section Starts */
+
+.services-container {
+  border-radius: 15px;
+  box-shadow: 0 0.8rem 6px 0 rgb(0 0 0 / 25%);
+  width: 40rem;
+  margin-bottom: 2rem;
+}
+
+.six-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.services-container:hover {
+  background-color: var(--bgcolor);
+}
+
+.services-container .main-hero-para {
+  font-weight: lighter;
+}
+
+.service-main-container .work-container-subdiv:hover > .fontawesome-style {
+  background-color: #fff;
+}
+
+/* @media (min-width: 1400px) { 
+  .service-container .col-xxl-4 {
+     flex: 0 0 auto; 
+     width: 30% !important; 
+     margin: auto;
+  }
+}
+
+@media (min-width: 992px) { 
+  .service-container .col-lg-4 { 
+    flex: 0 0 auto; 
+    width: 30% !important; 
+    margin: 2.5rem auto; 
+  } 
+} */
+
+/*-------------------------------------------------Aboutus section End */

@@ -26,7 +26,7 @@ const serviceapi = [
   {
     id: 5,
     logo: "fas fa-hand-holding-usd",
-    title: "choose an amount to send.",
+    title: "Choose an amount to send.",
     info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etquia quis?",
   },
   {
