@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap');
+
 
 * {
   margin: 0;
@@ -350,3 +351,440 @@ header {
 } */
 
 /*-------------------------------------------------Aboutus section End */
+
+/*-------------------------------------------------Contactus section Starts */
+
+.contactus-leftside img {
+  width: 60%;
+  box-shadow: 0 0.8rem 6px 0 rgb(0 0 0 / 25%);
+  border-radius: 15px;
+}
+
+.contact-input-field {
+  margin-bottom: 2.2rem;
+}
+
+.form-control {
+  height: 50px;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+}
+
+/*-------------------------------------------------Contactus section End */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bgcolor: #f1f5fd;
+  --primary-color: #6f5de7;
+  --text-color: #a5a5af;
+  --main-text-color: #333333;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333333;
+}
+
+@media (min-width: 1500px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm, 
+  .container-xl, 
+  .container-xxl { max-width: 1500px !important; }
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl { max-width: 1400px; }
+}
+
+/*-------------------------------------------------Navbar Start */
+
+.navbar-bg {
+  background-color: var(--bgcolor);
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  font-size: 2.6rem;
+}
+
+.navbar-brand i {
+  color: var(--primary-color);
+}
+
+.navbar li {
+  padding: 0 2rem;
+}
+
+.navbar li a{
+  font-size: 1.7rem;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.navbar li a::after {
+  content: "";
+  position: absolute;
+  background-color: var(--primary-color);
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: 0px;
+  transition: 0.3s;
+}
+
+.navbar li a:hover::after{
+  width: 100%;
+}
+
+.btn-style {
+  width: 10rem;
+  height: 3.5rem;
+  border-radius: 2rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  text-transform: capitalize;
+  font-size: 1.6rem;
+}
+
+.btn-style:hover {
+  border: 0.1rem solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  box-shadow: 0 0.2rem 0.5rem #7b6dd385;
+}
+
+.btn-style-border {
+  border: 0.1rem solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  box-shadow: 0 0.2rem 0.5rem #7b6dd385;
+}
+
+.btn-style-border:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+  text-transform: capitalize;
+}
+
+/*-------------------------------------------------Navbar End */
+
+/*-------------------------------------------------Header Start */
+
+header {
+  background-color: var(--bgcolor);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.main-hero-container {
+  height: 80vh;
+  display: flex;
+  /* background-color: aqua; */
+}
+
+.main-hero-container .h1 {
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+.main-hero-para {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin: 3rem 0 5rem 0;
+  font-weight: lighter;
+}
+
+.main-hero-container h3 {
+  font-weight: lighter;
+}
+
+.main-hero-section-img {
+  position: relative;
+}
+
+.main-hero-section-img img{
+  width: 60%;
+  height: 75%;
+  margin-top: 10rem;
+  box-shadow: 0 0.8rem 6px 0 rgb(0 0 0 / 25%);
+  border-radius: 1.5rem;
+  position: absolute;
+}
+
+.main-hero-section-img .main-hero-section-img2 {
+  position: absolute;
+  width: 45%;
+  height: 35%;
+  left: 55%;
+  top: -2%;
+}
+
+.input-group {
+  position: relative !important;
+}
+
+.form-control-text {
+  position: absolute;
+  height: 4.4rem;
+  border: none;
+  outline: none;
+  padding: 1.5rem !important;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  box-shadow: 0 0.6rem 6px 0 rgb(0 0 0 / 25%);
+}
+
+.input-group {
+  position: absolute;
+  left: -10px;
+}
+
+.input-group-button {
+  position: absolute;
+  left: 59%;
+  color: #fff;
+  background-color: var(--primary-color);
+  top: 0.1rem;
+  height: 4.3rem;
+  width: 16%;
+  border-radius: 2rem !important;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  box-shadow: -4px 0 4px 0 rgb(0 0 0 / 25%);
+}
+
+.input-group-button:hover {
+  background-color: rgb(0, 60, 255);
+}
+
+/*-------------------------------------------------Header End */
+
+/*-------------------------------------------------Work section Start */
+
+.work-contiainer {
+  width: 80vw;
+  padding: 2rem;
+  box-shadow: 0 0.8rem 6px 0 rgb(0 0 0 / 25%);
+  margin-top: -10rem;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.work-contiainer .main-heading {
+  font-size: 30px;
+  font-weight: bolder;
+  margin: 30px;
+  word-spacing: 5px;
+}
+
+.work-container-subdiv {
+  padding: 0 60px 0 60px;
+}
+
+.work-contiainer .sub-heading {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.fontawesome-style {
+  font-size: 2.3rem;
+  color: var(--primary-color);
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: var(--bgcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+/*-------------------------------------------------Work section End */
+
+/*-------------------------------------------------Aboutus section Start */
+
+.our-services img {
+  width: 55%;
+  /* height: 80%; */
+  margin-top: 10rem;
+  box-shadow: 0 0.8rem 6px 0 rgb(0 0 0 / 25%);
+  border-radius: 15px;
+}
+
+.our-services .mini-title {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 3rem 0;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.our-services .main {
+  font-weight: bolder;
+}
+
+.our-services-info {
+  margin-top: 4rem;
+}
+
+.our-services-info .our-services-number {
+  height: 40px;
+  width: 40px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  color: var(--primary-color);
+} 
+
+.our-services-list .btn-style-border {
+  width: 12rem;
+}
+
+.our-services-list {
+  padding: 0 13rem;
+}
+
+.our-services-info .main-hero-para {
+  margin: 1rem 0;
+}
+
+/*-------------------------------------------------Aboutus section End */
+
+/*-------------------------------------------------Aboutus section Starts */
+
+.services-container {
+  border-radius: 15px;
+  box-shadow: 0 0.8rem 6px 0 rgb(0 0 0 / 25%);
+  width: 40rem;
+  margin-bottom: 2rem;
+}
+
+.six-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.services-container:hover {
+  background-color: var(--bgcolor);
+}
+
+.services-container .main-hero-para {
+  font-weight: lighter;
+}
+
+.service-main-container .work-container-subdiv:hover > .fontawesome-style {
+  background-color: #fff;
+}
+
+/* @media (min-width: 1400px) { 
+  .service-container .col-xxl-4 {
+     flex: 0 0 auto; 
+     width: 30% !important; 
+     margin: auto;
+  }
+}
+
+@media (min-width: 992px) { 
+  .service-container .col-lg-4 { 
+    flex: 0 0 auto; 
+    width: 30% !important; 
+    margin: 2.5rem auto; 
+  } 
+} */
+
+/*-------------------------------------------------Aboutus section End */
+
+/*-------------------------------------------------Contactus section Starts */
+
+.contactus-leftside img {
+  width: 60%;
+  box-shadow: 0 0.8rem 6px 0 rgb(0 0 0 / 25%);
+  border-radius: 15px;
+}
+
+.contact-input-field {
+  margin-bottom: 2.2rem;
+}
+
+.form-control {
+  height: 50px;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+}
+
+/*-------------------------------------------------Contactus section End */
+
+/*-------------------------------------------------Footer section Starts */
+
+footer {
+  padding: 5rem 0;
+  background-color: #182334;
+}
+
+footer h2 {
+  color: rgb(60, 152, 233);
+  margin-bottom: 4rem;
+  text-align: left;
+  margin-left: 20px;
+}
+
+footer li {
+  list-style: none;
+  text-decoration: none;
+  text-align: left;
+  font-weight: normal;
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+footer li a:hover {
+  color: var(--text-color);
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20rem;
+  margin: 2rem;
+  height: 6rem;
+}
+
+hr {
+  color: #a5a5af;
+}
+
+/*-------------------------------------------------Footer section End */
