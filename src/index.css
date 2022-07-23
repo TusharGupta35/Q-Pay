@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #333333;
 }
 
-@media (min-width: 1500px) {
+/* @media (min-width: 1500px) {
   .container,
   .container-lg,
   .container-md,
@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
   .container-sm,
   .container-xl,
   .container-xxl { max-width: 1400px; }
-}
+} */
 
 /*-------------------------------------------------Navbar Start */
 
@@ -83,7 +83,11 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 
-.navbar li a:hover::after{
+.active {
+  color: yellow;
+}
+
+.navbar li a:hover::after {
   width: 100%;
 }
 
